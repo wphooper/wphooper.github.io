@@ -1,0 +1,7 @@
+For the ‘infinite staircase’ square tiled surface we classify the
+Radon invariant measures for the straight line flow, obtaining an analogue
+of the celebrated Veech dichotomy for an infinite genus lattice surface. The 
+ergodic Radon measures arise from Lebesgue measure on a one parameter family
+of deformations of the surface. The staircase is a Z-cover of the torus, reducing
+the question to the well-studied cylinder map.
+

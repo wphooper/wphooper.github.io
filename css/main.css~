@@ -1,0 +1,25 @@
+a.menu_link:active {
+	color: #F00;
+}
+a.menu_link:link {
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-color: #00F;
+	border-bottom-style: solid;
+	color: #000;
+}
+a.menu_link:visited {
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-color: #70F;
+	border-bottom-style: solid;
+	color: #000;
+}
+a:hover {
+	font-style: italic;
+}
+div.head {
+	margin-top: 1em;
+	font-weight: bold;
+	font-size: 16px;
+}

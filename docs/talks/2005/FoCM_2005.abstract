@@ -1,0 +1,16 @@
+Computation and Billiards in Triangles
+
+Surprisingly, there are many open problems about billiards in triangles. 
+The most notable question is "Does every triangle have a periodic billiard 
+path?" This question has been resolved in the acute and right triangle 
+cases, and also when a triangle has rational angles. The resolution of the 
+rational case involves Teichmuller theory of compact surfaces, but this 
+resolution gives rise to further open questions (e.g. "Classify the Veech 
+triangles.")
+
+Recently, Rich Schwartz and I have approached triangular billiards from a 
+computational direction, yielding new results. I will demonstrate our 
+program, McBilliards, and discuss some of these new results. I will also 
+discuss some of the computational problems faced in constructing such a 
+program.
+

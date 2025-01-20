@@ -1,0 +1,8 @@
+Roughly, a periodic billiard path is a polygon P is called
+stable if any polygon P', which is sufficiently similar to P, has a periodic billiard
+path which bounces off the same sequence of edges. We will discuss the
+resolution of a conjecture of Vorobets, Galperin, and Stepin.
+No right triangle has a stable periodic billiard path. We will also discuss a
+slight generalization. Namely, stable perioidic billiards paths in acute and
+obtuse triangle can be distinguished by the sequence
+of edges they hit.

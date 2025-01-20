@@ -1,0 +1,12 @@
+div.head {
+    font-weight: bold;
+}
+ul {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+h3 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}

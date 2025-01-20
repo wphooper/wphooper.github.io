@@ -1,0 +1,242 @@
+
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="talk.css"/>
+	<title>Infinite nilpotent covers of square-tiled surfaces</title>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  TeX: {
+    Macros: {
+      C: "{\\mathbb C}",
+      R: "{\\mathbb R}",
+      T: "{\\mathbb T}",
+      Z: "{\\mathbb Z}",
+      GL: "{\\mathit GL}",
+      Aut: "{\\mathit Aut}",
+    }
+  }
+});
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript">
+page = 0
+window.addEventListener("keydown", function(e) {
+    var x = document.getElementsByClassName("page");
+    if([33].indexOf(e.keyCode) > -1) {
+        // Page up
+        console.log("page up")
+        e.preventDefault();
+        if (page>0) {
+            page = page - 1
+        }
+        x[page].scrollIntoView(false)
+    }
+    if([34].indexOf(e.keyCode) > -1) {
+        // Page down
+        console.log("page down")
+        e.preventDefault();
+        if (page < x.length-1) {
+            page = page + 1
+        }
+        x[page].scrollIntoView(false)
+    }
+}, false);
+</script> 
+</head>
+<body style="background: lightblue; ">
+<div style="width: 800px; background: white; margin-left: auto; margin-right: auto; padding: 10px; ">
+	
+	<div class="page" style="text-align: center;">
+		<p>Workshop on Dynamics and Moduli Spaces of Translation Surfaces</p>
+		<p>October 22 - 26, 2018, The Fields Institute</p>
+		<h1>Infinite nilpotent covers of square-tiled surfaces</h1>
+		<p style="text-align: center">
+    		<b>Pat Hooper</b> (City College of New York &amp; CUNY Graduate Center)<br>
+    		joint with<br>
+    		<b>Khalid Bou-Rabee</b> (City College of New York &amp; CUNY Graduate Center)
+		</p>
+		<p>
+			<em>The Extrinsic Primitive Torsion Problem</em> <a href="https://arxiv.org/abs/1708.02093">arXiv:1708.02093</a>
+		</p>
+	</div>
+
+	<hr>
+
+	<div class="page">
+		<h2>Outline of talk</h2>
+		<ol>
+			<li>Definitions, basic examples, motivating results</li>
+			<li>Symmetric square tiled surfaces through cylinders</li>
+		</ol>
+	</div>
+
+	<hr>
+	
+	<div>
+		<h2>Definitions</h2>
+		<ul>
+			<li class="page">Let $G$ be a discrete group and $S$ be a surface. A <em>$G$-cover</em> of $S$ is a regular cover $\tilde S \to S$ with Deck group
+				isomorphic to $G$.</li>
+			<li class="page">Let $\mu$ be a measure on a $G$-cover $\tilde S$, and $\alpha:G \to \R_{>0}$ be a group homomorphism. 
+				Then $\mu$ is <em>Maharam</em> if 
+				$$\mu \circ g = \alpha(g) \mu \quad \text{for all $g \in G$.}$$
+			</li>
+		</ul>
+	</div>
+
+	<hr>
+
+	<div class="page">
+		<p><b>Theorem</b> (Babillot, Ledrappier&ndash;Sarig)<br>
+		Let $\tilde S$ is a nilpotent-cover of a compact hyperbolic surface and $h^t:T_1 \tilde S \to T_1 \tilde S$ be
+		the horocycle flow. Then the the ergodic horocycle-flow invariant Radon measures are the Maharam measures which are in bijective
+		correspondence with $Hom(G,\R_{>0}) = \{\alpha:G \to \R_{>0}\}$.
+		</p>
+	</div>
+	
+	<hr>
+
+	<div>
+		<ul>
+			<li>A square-tiled surface is a cover of ${\mathbb T}^\ast=\T^2 \smallsetminus \{0\}$.</li>
+			<li class="page">The straight-line flow in direction $\theta$ is 
+				$$F_\theta^t:S \to S; ~ z \mapsto z + e^{i \theta} \text{ in local coordinates}.$$
+			</li>
+		</ul>
+	</div>
+	<hr>
+	<div>
+		<p class="page"><b>Theorem</b> (H) Let $\tilde S$ be a nilpotent-cover of a compact translation surface $S$ which is possibly branched.
+			Assume there are horizontal
+			and vertical affine multitwists $\phi,\psi:\tilde S \to \tilde S$ in horizontal
+			and vertical cylinder decompositions and that each cylinder intersects at least two others. Let 
+			$$\Gamma = \langle D(\phi), D(\psi) \rangle = 
+			\left\langle \left(\begin{array}{r} 1 & a \\ 0 & 1 \end{array}\right), 
+				\left(\begin{array}{r} 1 & 0 \\ b & 1 \end{array}\right)\right\rangle.$$
+			Then for all but countably many $\theta$ in the limit set of $\Gamma$, the flow $F_\theta$ is ergodic.
+			Moreover, the locally-finite ergodic invariant Borel measures are the $\alpha$-Maharam measures and
+			there is one for each $\alpha:G \to \R_{>0}.$
+		</p>
+	</div>
+
+	<hr style="border-top-width: 7px; border-top-color: orange;">
+	
+	<div>
+		<h2>Symmetric square tiled surfaces through cylinders</h2>
+		<p class="page"><b>Def.</b> Let $S$ be a square-tiled surface with covering map $\pi:S \to \T^\ast$. Let $k \geq 2$.}
+			We say $S$ is $k$-periodic if for every non-singular geodesic $\tilde \gamma$ of rational slope in $S$,
+			the restriction of $\pi$ to $\tilde \gamma \to \pi(\tilde \gamma)$ is a finite cover of degree dividing $k$.
+		</p>	
+		<p class="page"><b>Prop.</b> For each integer $k \geq 2$, there is a universal $k$-periodic square-tiled surface $U_k$. That is,
+			$U_k$ is a $k$-periodic square tiled surface and if $S$ is another one, there is a covering $U_k \to S$.
+		</p>		
+	</div>
+	
+	<div class="page">
+		<img src="farey3.svg" style="width: 100%">	
+	</div>
+
+	<div class="page">
+		<h3>Normal generators for $P_2$.</h3>
+		<img src="P2gens.svg" style="width: 100%">
+	</div>
+
+	<div class="page">
+		<h3>Normal generators for $P_3$.</h3>
+		<img src="P3gens.svg" style="width: 100%">
+		$$G_3=F_2/P_3=F_2 / \langle a^3, b^3, (ab)^3, (ab^{-1})^3\rangle.$$
+	</div>
+
+	<div class="page">
+		<h3>Normal generators for $P_4$.</h3>
+		<img src="P4gens.svg" style="width: 100%">
+	</div>
+
+	<div class="page" style="max-height: 100%;">
+		<h3>Normal generators for $P_5$.</h3>
+		<img src="P5gens.svg" style="width: 100%; ">
+	</div>
+
+	<div class="page" style="max-height: 100%;">
+		<h3>Normal generators for $P_6$...</h3>
+		<img src="platonic6d.svg" style="width: 100%; ">
+	</div>
+
+	<div class="page"><p><b>Open Question:</b>
+		Are the groups $P_k$ for $k \geq 6$ finitely normally generated?
+		Is our countable list of generators minimal?
+		</p>
+	</div>
+
+	<div class="page">
+		<p><b>Theorem 1 (H &ndash; Bou-Rabee).</b><br>
+			The surface $U_k$ is infinite (equivalently, $F_2/P_k$ is infinite) if and only if $k \geq 4$.
+		</p>
+	</div>
+
+	<div>
+		<p class="page"><b>Theorem 2 (H &ndash; Bou-Rabee).</b><br>
+			The group $G_4 = F_2/P_4$ is virtually a torsion-free nilpotent group of dimension $5$ and nilpotence class $2$.
+			There is a faithful representation $\tilde{\tilde{\rho}}:F_2/P_4 \to SL(9,\C)$ determined by 
+			$$\tilde{\tilde{\rho}}(a)=\textit{diag}(1, -1, -i, -i; -1, 1, i, i; 1),$$
+			$$\tilde{\tilde{\rho}}_4(b)=\left(\begin{array}{rrrr|rrrr|r}
+0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & -1 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+\hline
+0 & -1 & -1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+1 & 0 & 0 & -1 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & -1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & -1 & 0 & 0 & 0 & 0 & -1 \\
+\hline
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1
+\end{array}\right).$$
+		</p>
+		<p class="page">
+<a title="By Georg Mittenecker [CC BY-SA 2.5 
+ (https://creativecommons.org/licenses/by-sa/2.5
+)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Wollmilchsau.jpg" style="float: right; max-width: 25%;"><img width="256" alt="Wollmilchsau" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Wollmilchsau.jpg"></a>
+			<b>Cor.</b> $U_4$ is a torsion-free class $2$ nilpotent cover of the <em>eierlegende Wollmilchsau</em>, the
+			8-square surface built associated to the quaterion group.<br>
+			<img src="wolmilchsau_surface.svg" style="width: 60%; margin: 0%; "><br>
+			This surface was found independently by Forni and by Herrlich &ndash; Möller &ndash; Weitze-Schmithüsen.
+		</p>
+		<p class="page">
+			The surface $U_4$ is a $\Z$-cover of a $\Z^4$-cover of the Wollmilchsau. The deck group $G_4=F_2/P_4$
+			is a $\Z$-extension of a $\Z^4$-extension of the quaternion group.
+		</p>
+		<p class="page">
+			<b>Theorem (Frączek &ndash; Schmoll)</b><br>
+			Straight-line flow is ergodic in a.e. direction on $U_4/\Z$. 
+		</p>
+	</div>
+
+	<hr style="border-top-width: 7px; border-top-color: orange;">
+
+	<div>
+		<p class="page">
+			There is a decomposition $\Aut(F_2)=\Aut_+(F_2) \cup \Aut_-(F_2)$, where
+			signs are assigned to an automorphism depending on the determinant of the image
+			in $\GL(2,\Z)=Out(F_2)$.
+		</p>
+		<div class="page">			
+			<b>Def.</b> A representation $\rho:F_2 \to GL(m,\C)$ is <em>(oriented) characteristic</em> if:
+			<ol>
+				<li>For every $\psi \in \Aut_+(F_2)$ there is an $M \in GL(m,\C)$ so that
+					$$M \cdot \rho \circ \psi^{-1}(g) \cdot M^{-1} = \rho(g) \quad \text{for all $g \in F_2$.}$$
+				</li>
+				<li>For every $\psi \in \Aut_-(F_2)$ there is an $M \in GL(m,\C)$ so that
+					$$ M \cdot \overline{\rho \circ \psi^{-1}(g)}  \cdot M^{-1} = \rho(g) \quad \text{for all $g \in F_2$.}$$
+				</li>
+			</ol>
+		</div>	
+	</div>
+	
+</div>
+</body>
+</html>

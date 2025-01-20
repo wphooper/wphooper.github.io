@@ -1,0 +1,42 @@
+section.section4, section.section5, section.section6 {
+    margin-left: 0.25in;
+}
+section.section5 {
+  background-color: lightyellow;
+  border-width: 0.5px;
+  border-style: solid;
+  padding: 0.5em;
+}
+hr {
+    display: none;
+}
+@media print { 
+    section.section1:has(> hr:last-child), section.section2:has(> hr:last-child), section.section3:has(> hr:last-child), section.section4:has(> hr:last-child), section.section5:has(> hr:last-child), section.section6:has(> hr:last-child) {
+        page-break-after: always;
+    }
+    hr:not(:last-child) {
+        display: block;
+        visibility: hidden;
+        page-break-after: always;
+    }
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+table, th, td {
+    min-width: 3em;
+    padding-left 0.5em;
+    padding-right 0.5em;
+    border-width: 1pt;
+    border-style: solid;
+    border-collapse: collapse;
+}
+th, td {
+    text-align: center;
+    font-weight: normal;
+}
+ol {list-style-type: lower-roman;}
+ol ol {list-style-type: lower-latin;}
+ol ol ol {list-style-type: decimal;}

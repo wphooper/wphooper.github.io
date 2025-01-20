@@ -1,0 +1,254 @@
+div.lowerline {
+	border-bottom-style: solid;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom-color: white;
+	border-bottom-width: 1px;
+}
+div.upperline {
+	border-top-style: solid;
+	padding-top: 1em;
+	margin-top: 1em;
+	border-top-color: white;
+	border-top-width: 1px;
+}
+div.lowerdoubleline {
+	border-bottom-width: 6px;
+	border-bottom-style: double;
+	border-bottom-color: white;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+div.upperdoubleline {
+	border-top-width: 6px;
+	border-top-style: double;
+	border-top-color: white;
+	margin-top: 1em;
+	padding-top: 1em;
+}
+span.map {
+	font-weight: bold;
+	font-size: 1.25em;
+	font-family: courier;
+	color: #000000;
+	/*border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	padding: 4px;
+	background-color: white;*/
+}
+
+a.map {
+	color: black;	
+}
+a.map:hover {
+	color: black;	
+	background-color: white;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #0000FF;
+	border-bottom-width: 1px;
+	border-bottom-color: #0000FF;
+	border-bottom-style: solid;
+}
+
+a:hover {
+	color: red;	
+	border-bottom-color: red;
+}
+
+a:active {
+	color: red;	
+	border-bottom-color: yellow;
+}
+
+a.hide {
+	font-style: normal;
+	color: #000000;
+	border-bottom-style: none;
+	border-bottom-width: 0px;
+	font-weight: normal;
+	text-decoration: none;
+}
+a.hide:hover {
+	font-style: normal;
+}
+
+body {
+	font-family: helvetica, arial, sans-serif;
+	background-color: #BFC6F2;
+	font-size: 16px;
+	color: black;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+
+
+h1 {
+	border-bottom-style: double;
+	border-bottom-color: white;
+	border-bottom-width: 6px;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 0px;
+	margin-top: 0.5em;
+}
+
+h2 {
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: left;
+	margin-top: 0.5em;
+	margin-bottom:0px;
+}
+
+div.p {
+	margin-top: 0.5em;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+div.block {
+	margin-top: 0.5em;
+	margin-bottom: 0px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+div.date {
+	padding-left: 10px;	
+	padding-top: 2px;	
+	padding-bottom: 2px;	
+	text-align: left;
+	font-weight: bold;
+	background-color: #FFFFB3;
+}
+
+div.topic {
+	margin: 4px;	
+	/*	
+	padding-top: 4px;	
+	padding-bottom: 4px;
+	*/	
+	text-align: left;
+}
+
+
+span.marked {
+	text-decoration: underline;
+	/*
+	border-bottom-width: 1px;
+	border-bottom-color: #FF0000;
+	border-bottom-style: solid;
+	*/
+	color: #FF0000;
+	font-weight: bold;
+}
+
+
+span.date {
+	background-color: #FFFFB3;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+
+table.info {
+	width: 100%;
+	margin-top: 0.5em;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #BFBFBF;
+	background-color: white;
+}
+
+td {
+	padding-right: 0px;
+	/*padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 0.125em;
+	padding-bottom: 0.125em;
+	*/
+}
+
+td.cat {
+	font-weight: bold;
+	background-color: #afafaf;
+	border-bottom-style: dotted;
+	border-bottom-color: #7f7f7f;
+	border-bottom-width: 1px;
+}
+
+
+td.cat-left {
+	font-weight: bold;
+	border-right-color: #FFC0CB;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: dotted;
+	border-bottom-color: #7f7f7f;
+	border-bottom-width: 1px;
+	background-color: #afafaf;
+}
+
+
+td.info {
+	vertical-align: top;
+	border-bottom-style: dotted;
+	border-bottom-color: #7f7f7f;
+	border-bottom-width: 1px;
+	padding: 4px;	
+}
+
+td.info-left {
+	vertical-align: top;
+	border-right-color: #FFC0CB;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: dotted;
+	border-bottom-color: #7f7f7f;
+	border-bottom-width: 1px;
+	padding: 4px;	
+}
+
+
+ul {
+	margin: 0px;
+	padding: 0px 5em;
+}
+
+li {
+	margin: 0px;
+	padding: 0.25em 0em;
+}
+.math {
+	font-family: serif;
+	font-style: italic;
+}
+div.math {
+	text-align: center;
+}
+.code {
+	color: darkblue;
+	font-family: monospace;
+	font-weight: bold;
+}
+div.code {
+	background-color : #e4e5e7;
+	display: table;
+	padding: 0.5em;
+	border-style : solid;
+	border-color : #95abd0;
+	border-width : thin;
+}
+div.indent {
+	margin-left: 5em;	
+}

@@ -1,0 +1,9 @@
+body {
+	font-size: 12pt;
+}
+div.file {
+	border-bottom-width: 1px;
+	border-color: black;
+	text-align: left;
+	border-bottom-style: solid;
+}

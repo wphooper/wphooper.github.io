@@ -1,0 +1,77 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="talk.css"/>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body style="background: lightblue; ">
+<div style="width: 800px; background: white; margin-left: auto; margin-right: auto; padding: 10px; ">
+<h1>The Rel Leaves of the Arnoux-Yoccoz Surfaces</h1>
+
+<p style="text-align: center">
+<b>Pat Hooper</b> (City College of New York &amp; CUNY Graduate Center)<br>
+on joint work with <b>Barak Weiss</b> (Tel Aviv University)</p>
+
+<hr>
+<h2>Translation Surfaces </h2>
+
+<p>A <em>presentation of a translation surface</em> a finite disjoint union of polygons in the plane with pairs of edges identified by translations which reverse the induced orientation of edges. Two presentations represent the same surface if they differ by a sequence of moves involving subdividing polygons, translating polygons, and gluing polygons along identified edges.</p>
+
+<p>Vertices of polygons are identified to form cone angles with cone angle $2k\pi$ for some integer $k \geq 1$. A cone singularity with cone angle $2 \pi$ is <i>removable</i>. A translation surface determines a topological surface $S$ together with a finite collection $\Sigma \supset S$ of unremovable singularities.</p>
+
+
+<h2>Deforming translation surfaces</h2>
+
+<p>A translation surface can be deformed by deforming the polygons in a presentation while keeping identified pairs of edges parallel and of the same length.</p>
+
+<iframe scrolling="no" src="https://tube.geogebra.org/material/iframe/id/m5DMjCqJ/width/800/height/400/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="400px" style="border:0px;"> </iframe>
+
+<p>
+We denote by ${\mathcal H}$ the collection of translation surfaces reachable by deformations of a fixed surface.
+The space ${\mathcal H}$ is an orbifold locally modeled on ${\mathbb C}^n$ for some $n \geq 1$ with transition functions in a symplectic group. The space ${\mathcal H}_1$ of unit area surfaces has finite volume due to work of Masur and Veech.
+</p>
+
+<p><b>Affine deformations.</b> There is a $GL(2,{\mathbb R})$ action on ${\mathcal H}$:</p>
+
+<iframe scrolling="no" src="https://tube.geogebra.org/material/iframe/id/GrNsurLE/width/800/height/400/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="400px" style="border:0px;"> </iframe>
+
+<p>A <em>rel deformation</em> of a translation surface can be viewed as moving all vertices representing the same singularity simultaneously by the same translation of the plane. The <em>rel leaf</em> of a translation surface is the set of surfaces obtainable by a sequence of rel deformations.
+</p>
+
+<iframe scrolling="no" src="https://tube.geogebra.org/material/iframe/id/okiAlOVQ/width/800/height/400/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="400px" style="border:0px;"> </iframe>
+
+<p>
+We will be considering the case of two singularities which we mark: a black singularity and a white singularity. The vertical rel flow $rel^{(v)}_t$ moves the white singularity upward distance $t$, and the horizontal rel flow $rel^{(h)}_s$ moves it rightward.
+</p>
+
+<h2>The surface we will be considering:</h2>
+
+<p>
+We will be considering a particular vertical rel trajectory, $x_t$. So, $x_{s+t}=rel^{(v)}_t(x_s)$ for all $s,t \in {\mathbb R}$.
+</p>
+
+<p>
+Let $\alpha$ be the unique positive solution to $\alpha+\alpha^2+\alpha^3=1$. We have $\alpha \approx 0.57$. We let $\beta=\sum_{j=2}^\infty \alpha^j$. The following is the surface $x_\beta$:
+</p>
+
+<iframe scrolling="no" src="https://tube.geogebra.org/material/iframe/id/CGBNikLq/width/800/height/600/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="600px" style="border:0px;"> </iframe>
+
+<p>
+Each surface in $\{x_t: t>0\}$ has a horizontal cylinder decomposition. The following graph shows the heights of these cylinders:
+</p>
+
+<center><img src="cylinder_height_graph.png" width="588" height="500" alt="cylinder_height_graph.png"></center>
+
+<p>The following shows the algebraic dynamics in $x_t$ of the shortest periodic orbit as $t \to 0$:</p>
+
+<center><img src="sequence.png" width="588" height="500" alt="sequence.png"></center>
+
+</div>
+</body>
+</html>
